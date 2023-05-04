@@ -1,0 +1,168 @@
+*{
+    padding :0px;
+    margin:0px;
+}
+header {
+    width:100%;
+    height:100vh;
+    background-color: black;
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+#carVid{
+    width:100%;
+    filter:brightness(50%);
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#heading1,#heading2{
+    font-size:40px;
+    color:white;
+    position:absolute;
+    z-index:3;
+    letter-spacing:30px;
+    word-spacing:20px;
+    text-shadow:5px 5px 5px black;
+    font-family:'poltawski Nowy' , serif;
+}
+#heading2{
+  position:relative;
+  top:60px;
+  font-size:20px;
+  color:white;
+  letter-spacing:10px;
+  word-spacing:20px;
+  text-shadow:5px 5px 5px black;
+  font-family:'poltwaski Nowy',serif;
+  transform: translateY(220);
+  filter:opactiy(0);
+}
+#carAni{
+    width:100%;
+    height:30px;
+    position:absolute;
+    z-index:3;
+    transform:translateX(-950deg);
+}
+#carimg{
+    position:absolute;
+    height:60px;
+    z-index:3;
+     right:500px;
+     background-color:transparent;
+     border-radius:20px;
+}
+#headerArrow,#secArrow1,#secArrow2
+{
+      width:80px;
+      position:absolute;
+      bottom:20px;
+      background-color:transparent;
+      overflow:hidden; 
+      z-index:3;
+      transition:all 0.2s;
+      right:45%;
+      border-radius:40px;
+}
+#headerArrow:hover,#secArrow1:hover,#secArrow2:hover{
+    transform:translateY(20px);
+}
+#sec1,#sec2{
+    width:100%;
+    height:100vh;
+    background-color:black;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+#sec2{
+    background-color:rgba(117, 191, 194,0.3);
+    
+}
+#secArrow1,#secArrow2{
+    width:50px;
+   
+}
+.cars{
+    background-image:url(../Asset/images/bmw.webp);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background-size:120% 100%;
+    height:80vh;
+    width:50%;
+    position:absolute;
+    right:0px;
+    top:10px;
+    transition:background-size 0.2s, background-position 0.2s;
+}
+.cars:hover
+{
+     background-size: 160% 140%;
+}
+.carpara {
+    color:white;
+    width:50%;
+    padding:0px 20px;
+    letter-spacing:2px;
+    font-size:18px;
+    text-indent:20px;
+    text-align:justify;
+}
+.carsName{
+    color:lawngreen;
+    font-size:60px;
+    position:absolute;
+    top:40px;
+    left:20px;
+    font-family:'poltawski Nowy',serif;
+}
+#car2Name{
+    color:purple;
+}
+#car2para{
+    color:black;
+    
+}
+#car2{
+    background-image:url("../Asset/images/audi.jpg");
+    background-position: 60px 0px;
+}
+#logout{
+    position:absolute;
+    top:40px;
+    right:40px;
+    color:white;
+    z-index:3;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:transform 0.2s;
+
+}
+#logout:hover{
+    transform:scale(1.2);
+}
+.logo{
+    padding-left:20px;
+    width:40px;
+    transition:transition 0.2s;
+
+}
+.logo:hover{
+    transform:scale(1.2);
+}
+#footer{
+    background-color:gray;
+}
+#secArrow1{
+    right:90%;
+    bottom:10px;
+    
+}
+
